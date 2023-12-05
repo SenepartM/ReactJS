@@ -3,15 +3,41 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Formulaire from './composant/Formulaire';
+import Condition from './composant/Condition';
+import Boucle from './composant/Boucle';
+import Form1234 from './composant/Form1234';
+
+// Importez les styles de votre choix pour améliorer l'apparence de la page
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Mettez en place une mise en page organisée
 root.render(
   <React.StrictMode>
-    <App />
+    <header>
+      <h1>Ma Page d'Exercices React</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Formulaire</h2>
+        <Formulaire />
+      </section>
+      <section>
+        <h2>Condition</h2>
+        <Condition />
+      </section>
+      <section>
+        <h2>Boucle</h2>
+        <Boucle />
+      </section>
+      <section>
+        <h2>Formulaire Avec Verification</h2>
+        <Form1234 />
+      </section>
+    </main>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Si vous souhaitez mesurer les performances de votre application, utilisez reportWebVitals
 reportWebVitals();

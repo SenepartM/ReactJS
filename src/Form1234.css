@@ -1,0 +1,18 @@
+/* Formbdd.css */
+
+.form-container {
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-container button {
+    margin-top: 10px;
+  }
+  
+  /* Style pour la couleur verte lorsque le mot de passe est correct */
+  .form-container.green {
+    border-color: green;
+  }
+  

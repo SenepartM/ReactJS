@@ -1,13 +1,90 @@
-body {
+/* Réinitialisation de la mise en page */
+body, h1, h2, h3, p, ul, li {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+/* En-tête */
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Contenu principal */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Sections */
+section {
+  background-color: #fff;
+  border: 1px solid #bdd4e6;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Titres de section */
+h2 {
+  color: #007acc;
+}
+
+/* Formulaire stylisé */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bdd4e6;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005e99;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #007acc;
+  color: #fff;
+}
+
+/* Effets de survol */
+a:hover {
+  color: #007acc;
+}
+
+/* Réactivité */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
 }
