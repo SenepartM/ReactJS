@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Formulaire from './composant/Formulaire';
 import Condition from './composant/Condition';
 import Boucle from './composant/Boucle';
 import Form1234 from './composant/Form1234';
+import Changecolor from './composant/Changecolor';
 
 // Importez les styles de votre choix pour améliorer l'apparence de la page
 
@@ -34,6 +35,10 @@ root.render(
       <section>
         <h2>Formulaire Avec Verification</h2>
         <Form1234 />
+      </section>
+      <section>
+        <h2>Changer ma couleur</h2>
+        <Changecolor />
       </section>
     </main>
   </React.StrictMode>
