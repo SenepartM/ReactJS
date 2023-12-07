@@ -9,6 +9,7 @@ import Boucle from './composant/Boucle';
 import Form1234 from './composant/Form1234';
 import Changecolor from './composant/Changecolor';
 import FormulaireParentComponent from './composant/FormulaireParentComponent';
+import ParentComponent from './composant/ParentComponent';
 
 // Importez les styles de votre choix pour améliorer l'apparence de la page
 
@@ -44,6 +45,10 @@ root.render(
       <section>
         <h2>Formulaire Parent/Enfant</h2>
         <FormulaireParentComponent/>
+      </section>
+      <section>
+        <h2>Enfant1 et Enfant2 Statement</h2>
+        <ParentComponent/>
       </section>
     </main>
   </React.StrictMode>
